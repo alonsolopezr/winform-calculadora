@@ -48,7 +48,7 @@ namespace WinFormCalculadora
             this.btnSigno = new System.Windows.Forms.Button();
             this.btnPunto = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAC = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -248,17 +248,17 @@ namespace WinFormCalculadora
             this.btn0.UseVisualStyleBackColor = true;
             this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
-            // button1
+            // btnAC
             // 
-            this.button1.BackColor = System.Drawing.Color.MediumBlue;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(153, 41);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(31, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "AC";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAC.BackColor = System.Drawing.Color.MediumBlue;
+            this.btnAC.ForeColor = System.Drawing.Color.White;
+            this.btnAC.Location = new System.Drawing.Point(153, 41);
+            this.btnAC.Name = "btnAC";
+            this.btnAC.Size = new System.Drawing.Size(31, 23);
+            this.btnAC.TabIndex = 7;
+            this.btnAC.Text = "AC";
+            this.btnAC.UseVisualStyleBackColor = false;
+            this.btnAC.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmCalculadora
             // 
@@ -267,7 +267,7 @@ namespace WinFormCalculadora
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(89)))), ((int)(((byte)(250)))));
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(197, 186);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAC);
             this.Controls.Add(this.btnIgual);
             this.Controls.Add(this.btnSuma);
             this.Controls.Add(this.btnDivision);
@@ -310,7 +310,7 @@ namespace WinFormCalculadora
         private System.Windows.Forms.Button btnSigno;
         private System.Windows.Forms.Button btnPunto;
         private System.Windows.Forms.Button btn0;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAC;
     }
 }
 
