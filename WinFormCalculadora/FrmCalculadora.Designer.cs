@@ -45,19 +45,27 @@ namespace WinFormCalculadora
             this.btnDivision = new System.Windows.Forms.Button();
             this.btnSuma = new System.Windows.Forms.Button();
             this.btnIgual = new System.Windows.Forms.Button();
+            this.btnSigno = new System.Windows.Forms.Button();
+            this.btnPunto = new System.Windows.Forms.Button();
+            this.btn0 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtDisplay
             // 
-            this.txtDisplay.Location = new System.Drawing.Point(12, 12);
+            this.txtDisplay.Location = new System.Drawing.Point(12, 15);
             this.txtDisplay.Name = "txtDisplay";
-            this.txtDisplay.Size = new System.Drawing.Size(135, 20);
+            this.txtDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtDisplay.Size = new System.Drawing.Size(172, 20);
             this.txtDisplay.TabIndex = 0;
             this.txtDisplay.Text = "0";
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnSigno);
+            this.panel1.Controls.Add(this.btnPunto);
+            this.panel1.Controls.Add(this.btn0);
             this.panel1.Controls.Add(this.btn3);
             this.panel1.Controls.Add(this.btn2);
             this.panel1.Controls.Add(this.btn1);
@@ -67,9 +75,9 @@ namespace WinFormCalculadora
             this.panel1.Controls.Add(this.btn9);
             this.panel1.Controls.Add(this.btn8);
             this.panel1.Controls.Add(this.btn7);
-            this.panel1.Location = new System.Drawing.Point(12, 38);
+            this.panel1.Location = new System.Drawing.Point(12, 41);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(135, 81);
+            this.panel1.Size = new System.Drawing.Size(135, 107);
             this.panel1.TabIndex = 1;
             // 
             // btn3
@@ -164,7 +172,7 @@ namespace WinFormCalculadora
             // 
             // btnResta
             // 
-            this.btnResta.Location = new System.Drawing.Point(153, 38);
+            this.btnResta.Location = new System.Drawing.Point(154, 93);
             this.btnResta.Name = "btnResta";
             this.btnResta.Size = new System.Drawing.Size(31, 23);
             this.btnResta.TabIndex = 2;
@@ -174,7 +182,7 @@ namespace WinFormCalculadora
             // 
             // btnMultiplicacion
             // 
-            this.btnMultiplicacion.Location = new System.Drawing.Point(153, 66);
+            this.btnMultiplicacion.Location = new System.Drawing.Point(154, 119);
             this.btnMultiplicacion.Name = "btnMultiplicacion";
             this.btnMultiplicacion.Size = new System.Drawing.Size(31, 23);
             this.btnMultiplicacion.TabIndex = 3;
@@ -183,7 +191,7 @@ namespace WinFormCalculadora
             // 
             // btnDivision
             // 
-            this.btnDivision.Location = new System.Drawing.Point(153, 96);
+            this.btnDivision.Location = new System.Drawing.Point(154, 145);
             this.btnDivision.Name = "btnDivision";
             this.btnDivision.Size = new System.Drawing.Size(31, 23);
             this.btnDivision.TabIndex = 4;
@@ -192,7 +200,7 @@ namespace WinFormCalculadora
             // 
             // btnSuma
             // 
-            this.btnSuma.Location = new System.Drawing.Point(153, 9);
+            this.btnSuma.Location = new System.Drawing.Point(154, 67);
             this.btnSuma.Name = "btnSuma";
             this.btnSuma.Size = new System.Drawing.Size(31, 23);
             this.btnSuma.TabIndex = 5;
@@ -202,13 +210,55 @@ namespace WinFormCalculadora
             // 
             // btnIgual
             // 
-            this.btnIgual.Location = new System.Drawing.Point(12, 125);
+            this.btnIgual.Location = new System.Drawing.Point(15, 148);
             this.btnIgual.Name = "btnIgual";
-            this.btnIgual.Size = new System.Drawing.Size(169, 23);
+            this.btnIgual.Size = new System.Drawing.Size(132, 23);
             this.btnIgual.TabIndex = 6;
             this.btnIgual.Text = "=";
             this.btnIgual.UseVisualStyleBackColor = true;
             this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
+            // 
+            // btnSigno
+            // 
+            this.btnSigno.Location = new System.Drawing.Point(92, 78);
+            this.btnSigno.Name = "btnSigno";
+            this.btnSigno.Size = new System.Drawing.Size(40, 23);
+            this.btnSigno.TabIndex = 13;
+            this.btnSigno.Text = "+/-";
+            this.btnSigno.UseVisualStyleBackColor = true;
+            this.btnSigno.Click += new System.EventHandler(this.btnSigno_Click);
+            // 
+            // btnPunto
+            // 
+            this.btnPunto.Location = new System.Drawing.Point(49, 78);
+            this.btnPunto.Name = "btnPunto";
+            this.btnPunto.Size = new System.Drawing.Size(40, 23);
+            this.btnPunto.TabIndex = 12;
+            this.btnPunto.Text = ".";
+            this.btnPunto.UseVisualStyleBackColor = true;
+            this.btnPunto.Click += new System.EventHandler(this.btnPunto_Click);
+            // 
+            // btn0
+            // 
+            this.btn0.Location = new System.Drawing.Point(3, 78);
+            this.btn0.Name = "btn0";
+            this.btn0.Size = new System.Drawing.Size(40, 23);
+            this.btn0.TabIndex = 11;
+            this.btn0.Text = "0";
+            this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.MediumBlue;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(153, 41);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(31, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "AC";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmCalculadora
             // 
@@ -216,7 +266,8 @@ namespace WinFormCalculadora
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(89)))), ((int)(((byte)(250)))));
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(197, 161);
+            this.ClientSize = new System.Drawing.Size(197, 186);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnIgual);
             this.Controls.Add(this.btnSuma);
             this.Controls.Add(this.btnDivision);
@@ -256,6 +307,10 @@ namespace WinFormCalculadora
         private System.Windows.Forms.Button btnDivision;
         private System.Windows.Forms.Button btnSuma;
         private System.Windows.Forms.Button btnIgual;
+        private System.Windows.Forms.Button btnSigno;
+        private System.Windows.Forms.Button btnPunto;
+        private System.Windows.Forms.Button btn0;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -103,8 +103,7 @@ namespace WinFormCalculadora
                     operador = "";
                     break;
             }
-            //imprimiros la prop nombre
-            MessageBox.Show("prop nomnnbre= "+oper.nombre);
+           
             //ejecutamos la operacion
             txtDisplay.Text = oper.ejecutar().ToString();
 
@@ -120,6 +119,29 @@ namespace WinFormCalculadora
             this._op1 = double.Parse(txtDisplay.Text);
             //limpiar el display
             txtDisplay.Clear();
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Text += "0";
+        }
+
+        private void btnPunto_Click(object sender, EventArgs e)
+        {
+            //agregamos el punto 
+            txtDisplay.Text += ".";
+        }
+
+        private void btnSigno_Click(object sender, EventArgs e)
+        {
+            //txtDisplay.Text += "-";
+            txtDisplay.Text = "-" + txtDisplay.Text; //23.54 +/- = -23.54
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //limpiamos
+            txtDisplay.Text = "0";
         }
     }
 }
