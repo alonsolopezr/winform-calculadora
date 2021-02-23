@@ -37,47 +37,47 @@ namespace WinFormCalculadora
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "1"; 
+            quitar0PorNumero("1");
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "2";
+            quitar0PorNumero("2");
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "3";
+            quitar0PorNumero("3");
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "4";
+            quitar0PorNumero("4");
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "5";
+            quitar0PorNumero("5");
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "6";
+            quitar0PorNumero("6");
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "7";
+            quitar0PorNumero("7");
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "8";
+            quitar0PorNumero("8");
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "9";
+            quitar0PorNumero("9");
         }
 
         private void btnIgual_Click(object sender, EventArgs e)
@@ -123,25 +123,56 @@ namespace WinFormCalculadora
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "0";
+            //si li qye tiene el dispolay es diferente de "0", si no no escribe nada
+            if(txtDisplay.Text!="0")
+                txtDisplay.Text += "0";
         }
 
         private void btnPunto_Click(object sender, EventArgs e)
         {
-            //agregamos el punto 
-            txtDisplay.Text += ".";
+            //agregamos el punto, si es que no hay punto aactualmente
+            if (!txtDisplay.Text.Contains("."))
+                txtDisplay.Text += ".";
         }
 
         private void btnSigno_Click(object sender, EventArgs e)
         {
-            //txtDisplay.Text += "-";
-            txtDisplay.Text = "-" + txtDisplay.Text; //23.54 +/- = -23.54
+            //multiplicar por -1 lo que este en display
+            txtDisplay.Text = "" + (-1 * double.Parse(txtDisplay.Text));            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAC_Click(object sender, EventArgs e)
         {
-            //limpiamos
+            //limoiamos
             txtDisplay.Text = "0";
+        }
+
+        private void btnMultiplicacion_Click(object sender, EventArgs e)
+        {
+            //activar una bandera
+            this.operador = "*";
+            //tomamos ope1
+            this._op1 = double.Parse(txtDisplay.Text);
+            //limpiar el display
+            txtDisplay.Clear();
+        }
+
+        private void btnDivision_Click(object sender, EventArgs e)
+        {
+            //activar una bandera
+            this.operador = "/";
+            //tomamos ope1
+            this._op1 = double.Parse(txtDisplay.Text);
+            //limpiar el display
+            txtDisplay.Clear();
+        }
+
+        private void quitar0PorNumero(string numero)
+        {
+            if (txtDisplay.Text == "0")
+                txtDisplay.Text = numero;
+            else
+                txtDisplay.Text += numero;
         }
     }
 }
