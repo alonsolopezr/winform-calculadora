@@ -16,7 +16,7 @@ namespace Dominio_LibCalc
             this.Ope1 = op1;
             this.Ope2 = op2;
         }
-             public abstract double ejecutar();
+        public abstract double ejecutar();
 
     }
 }

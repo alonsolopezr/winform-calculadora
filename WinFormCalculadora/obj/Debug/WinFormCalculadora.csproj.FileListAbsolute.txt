@@ -11,3 +11,17 @@ C:\Users\irism_000\source\repos\DesktopApps\WinFormCalculadora\WinFormCalculador
 C:\Users\irism_000\source\repos\DesktopApps\WinFormCalculadora\WinFormCalculadora\bin\Debug\Dominio_LibCalc.dll
 C:\Users\irism_000\source\repos\DesktopApps\WinFormCalculadora\WinFormCalculadora\bin\Debug\Dominio_LibCalc.pdb
 C:\Users\irism_000\source\repos\DesktopApps\WinFormCalculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.csproj.CopyComplete
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\bin\Debug\WinFormCalculadora.exe.config
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\bin\Debug\WinFormCalculadora.exe
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\bin\Debug\WinFormCalculadora.pdb
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\bin\Debug\Dominio_LibCalc.dll
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\bin\Debug\Dominio_LibCalc.pdb
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.csproj.AssemblyReference.cache
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.csproj.SuggestedBindingRedirects.cache
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.FrmCalculadora.resources
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.Properties.Resources.resources
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.csproj.GenerateResource.cache
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.csproj.CopyComplete
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.exe
+C:\Users\X\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.pdb
