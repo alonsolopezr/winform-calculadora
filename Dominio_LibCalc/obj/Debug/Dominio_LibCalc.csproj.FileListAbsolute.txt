@@ -4,3 +4,9 @@ C:\Users\irism_000\source\repos\DesktopApps\WinFormCalculadora\Dominio_LibCalc\o
 C:\Users\irism_000\source\repos\DesktopApps\WinFormCalculadora\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.csproj.CoreCompileInputs.cache
 C:\Users\irism_000\source\repos\DesktopApps\WinFormCalculadora\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.dll
 C:\Users\irism_000\source\repos\DesktopApps\WinFormCalculadora\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.pdb
+C:\Users\master\source\repos\CalculadoraPractica\winform-calculadora\Dominio_LibCalc\bin\Debug\Dominio_LibCalc.dll
+C:\Users\master\source\repos\CalculadoraPractica\winform-calculadora\Dominio_LibCalc\bin\Debug\Dominio_LibCalc.pdb
+C:\Users\master\source\repos\CalculadoraPractica\winform-calculadora\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.csproj.AssemblyReference.cache
+C:\Users\master\source\repos\CalculadoraPractica\winform-calculadora\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.csproj.CoreCompileInputs.cache
+C:\Users\master\source\repos\CalculadoraPractica\winform-calculadora\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.dll
+C:\Users\master\source\repos\CalculadoraPractica\winform-calculadora\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.pdb
