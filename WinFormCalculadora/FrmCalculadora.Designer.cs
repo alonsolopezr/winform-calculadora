@@ -57,7 +57,7 @@ namespace WinFormCalculadora
             this.txtDisplay.Location = new System.Drawing.Point(16, 18);
             this.txtDisplay.Margin = new System.Windows.Forms.Padding(4);
             this.txtDisplay.Name = "txtDisplay";
-            this.txtDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtDisplay.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtDisplay.Size = new System.Drawing.Size(228, 22);
             this.txtDisplay.TabIndex = 0;
             this.txtDisplay.Text = "0";

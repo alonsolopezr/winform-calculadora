@@ -170,6 +170,7 @@ namespace WinFormCalculadora
             signo = double.Parse(txtDisplay.Text);
             signo = signo - (signo * 2);
             txtDisplay.Text = signo.ToString();
+
             //txtDisplay.Text =txtDisplay.Text; //23.54 +/- = -23.54
         }
 
