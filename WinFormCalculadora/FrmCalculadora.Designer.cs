@@ -55,7 +55,7 @@ namespace WinFormCalculadora
             // txtDisplay
             // 
             this.txtDisplay.Location = new System.Drawing.Point(16, 18);
-            this.txtDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDisplay.Margin = new System.Windows.Forms.Padding(4);
             this.txtDisplay.Name = "txtDisplay";
             this.txtDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtDisplay.Size = new System.Drawing.Size(228, 22);
@@ -77,7 +77,7 @@ namespace WinFormCalculadora
             this.panel1.Controls.Add(this.btn8);
             this.panel1.Controls.Add(this.btn7);
             this.panel1.Location = new System.Drawing.Point(16, 50);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(180, 132);
             this.panel1.TabIndex = 1;
@@ -85,8 +85,9 @@ namespace WinFormCalculadora
             // btnSigno
             // 
             this.btnSigno.Location = new System.Drawing.Point(123, 96);
-            this.btnSigno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSigno.Margin = new System.Windows.Forms.Padding(4);
             this.btnSigno.Name = "btnSigno";
+            this.btnSigno.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnSigno.Size = new System.Drawing.Size(53, 28);
             this.btnSigno.TabIndex = 13;
             this.btnSigno.Text = "+/-";
@@ -96,7 +97,7 @@ namespace WinFormCalculadora
             // btnPunto
             // 
             this.btnPunto.Location = new System.Drawing.Point(65, 96);
-            this.btnPunto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPunto.Margin = new System.Windows.Forms.Padding(4);
             this.btnPunto.Name = "btnPunto";
             this.btnPunto.Size = new System.Drawing.Size(53, 28);
             this.btnPunto.TabIndex = 12;
@@ -107,7 +108,7 @@ namespace WinFormCalculadora
             // btn0
             // 
             this.btn0.Location = new System.Drawing.Point(4, 96);
-            this.btn0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn0.Margin = new System.Windows.Forms.Padding(4);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(53, 28);
             this.btn0.TabIndex = 11;
@@ -118,7 +119,7 @@ namespace WinFormCalculadora
             // btn3
             // 
             this.btn3.Location = new System.Drawing.Point(123, 65);
-            this.btn3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn3.Margin = new System.Windows.Forms.Padding(4);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(53, 28);
             this.btn3.TabIndex = 10;
@@ -129,7 +130,7 @@ namespace WinFormCalculadora
             // btn2
             // 
             this.btn2.Location = new System.Drawing.Point(65, 65);
-            this.btn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn2.Margin = new System.Windows.Forms.Padding(4);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(53, 28);
             this.btn2.TabIndex = 9;
@@ -140,7 +141,7 @@ namespace WinFormCalculadora
             // btn1
             // 
             this.btn1.Location = new System.Drawing.Point(4, 65);
-            this.btn1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn1.Margin = new System.Windows.Forms.Padding(4);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(53, 28);
             this.btn1.TabIndex = 8;
@@ -151,7 +152,7 @@ namespace WinFormCalculadora
             // btn6
             // 
             this.btn6.Location = new System.Drawing.Point(123, 34);
-            this.btn6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn6.Margin = new System.Windows.Forms.Padding(4);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(53, 28);
             this.btn6.TabIndex = 7;
@@ -162,7 +163,7 @@ namespace WinFormCalculadora
             // btn5
             // 
             this.btn5.Location = new System.Drawing.Point(65, 34);
-            this.btn5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn5.Margin = new System.Windows.Forms.Padding(4);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(53, 28);
             this.btn5.TabIndex = 6;
@@ -173,7 +174,7 @@ namespace WinFormCalculadora
             // btn4
             // 
             this.btn4.Location = new System.Drawing.Point(4, 34);
-            this.btn4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn4.Margin = new System.Windows.Forms.Padding(4);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(53, 28);
             this.btn4.TabIndex = 5;
@@ -184,7 +185,7 @@ namespace WinFormCalculadora
             // btn9
             // 
             this.btn9.Location = new System.Drawing.Point(123, 4);
-            this.btn9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn9.Margin = new System.Windows.Forms.Padding(4);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(53, 28);
             this.btn9.TabIndex = 4;
@@ -195,7 +196,7 @@ namespace WinFormCalculadora
             // btn8
             // 
             this.btn8.Location = new System.Drawing.Point(65, 4);
-            this.btn8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn8.Margin = new System.Windows.Forms.Padding(4);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(53, 28);
             this.btn8.TabIndex = 3;
@@ -206,7 +207,7 @@ namespace WinFormCalculadora
             // btn7
             // 
             this.btn7.Location = new System.Drawing.Point(4, 4);
-            this.btn7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn7.Margin = new System.Windows.Forms.Padding(4);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(53, 28);
             this.btn7.TabIndex = 2;
@@ -217,7 +218,7 @@ namespace WinFormCalculadora
             // btnResta
             // 
             this.btnResta.Location = new System.Drawing.Point(205, 114);
-            this.btnResta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnResta.Margin = new System.Windows.Forms.Padding(4);
             this.btnResta.Name = "btnResta";
             this.btnResta.Size = new System.Drawing.Size(41, 28);
             this.btnResta.TabIndex = 2;
@@ -228,7 +229,7 @@ namespace WinFormCalculadora
             // btnMultiplicacion
             // 
             this.btnMultiplicacion.Location = new System.Drawing.Point(205, 146);
-            this.btnMultiplicacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMultiplicacion.Margin = new System.Windows.Forms.Padding(4);
             this.btnMultiplicacion.Name = "btnMultiplicacion";
             this.btnMultiplicacion.Size = new System.Drawing.Size(41, 28);
             this.btnMultiplicacion.TabIndex = 3;
@@ -239,7 +240,7 @@ namespace WinFormCalculadora
             // btnDivision
             // 
             this.btnDivision.Location = new System.Drawing.Point(205, 178);
-            this.btnDivision.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDivision.Margin = new System.Windows.Forms.Padding(4);
             this.btnDivision.Name = "btnDivision";
             this.btnDivision.Size = new System.Drawing.Size(41, 28);
             this.btnDivision.TabIndex = 4;
@@ -250,7 +251,7 @@ namespace WinFormCalculadora
             // btnSuma
             // 
             this.btnSuma.Location = new System.Drawing.Point(205, 82);
-            this.btnSuma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSuma.Margin = new System.Windows.Forms.Padding(4);
             this.btnSuma.Name = "btnSuma";
             this.btnSuma.Size = new System.Drawing.Size(41, 28);
             this.btnSuma.TabIndex = 5;
@@ -261,7 +262,7 @@ namespace WinFormCalculadora
             // btnIgual
             // 
             this.btnIgual.Location = new System.Drawing.Point(20, 182);
-            this.btnIgual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIgual.Margin = new System.Windows.Forms.Padding(4);
             this.btnIgual.Name = "btnIgual";
             this.btnIgual.Size = new System.Drawing.Size(176, 28);
             this.btnIgual.TabIndex = 6;
@@ -274,7 +275,7 @@ namespace WinFormCalculadora
             this.btnAC.BackColor = System.Drawing.Color.MediumBlue;
             this.btnAC.ForeColor = System.Drawing.Color.White;
             this.btnAC.Location = new System.Drawing.Point(204, 50);
-            this.btnAC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAC.Margin = new System.Windows.Forms.Padding(4);
             this.btnAC.Name = "btnAC";
             this.btnAC.Size = new System.Drawing.Size(41, 28);
             this.btnAC.TabIndex = 7;
@@ -299,7 +300,7 @@ namespace WinFormCalculadora
             this.Controls.Add(this.txtDisplay);
             this.ForeColor = System.Drawing.Color.MediumBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCalculadora";
@@ -330,10 +331,10 @@ namespace WinFormCalculadora
         private System.Windows.Forms.Button btnDivision;
         private System.Windows.Forms.Button btnSuma;
         private System.Windows.Forms.Button btnIgual;
-        private System.Windows.Forms.Button btnSigno;
         private System.Windows.Forms.Button btnPunto;
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnAC;
+        private System.Windows.Forms.Button btnSigno;
     }
 }
 

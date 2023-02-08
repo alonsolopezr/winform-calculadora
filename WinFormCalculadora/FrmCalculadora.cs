@@ -166,11 +166,11 @@ namespace WinFormCalculadora
 
         private void btnSigno_Click(object sender, EventArgs e)
         {
-            //txtDisplay.Text += "-";
-            if (!txtDisplay.Text.Contains("-"))
-            {
-                txtDisplay.Text = "-" + txtDisplay.Text; //23.54 +/- = -23.54
-            }
+            double signo;
+            signo = double.Parse(txtDisplay.Text);
+            signo = signo - (signo * 2);
+            txtDisplay.Text = signo.ToString();
+            //txtDisplay.Text =txtDisplay.Text; //23.54 +/- = -23.54
         }
 
         private void button1_Click(object sender, EventArgs e)
