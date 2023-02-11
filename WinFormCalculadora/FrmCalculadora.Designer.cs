@@ -49,16 +49,23 @@ namespace WinFormCalculadora
             this.btnSuma = new System.Windows.Forms.Button();
             this.btnIgual = new System.Windows.Forms.Button();
             this.btnAC = new System.Windows.Forms.Button();
+            this.clic_Tangente = new System.Windows.Forms.Button();
+            this.clic_Seno = new System.Windows.Forms.Button();
+            this.click_Coseno = new System.Windows.Forms.Button();
+            this.click_elevarCuadrado = new System.Windows.Forms.Button();
+            this.click_Raiz = new System.Windows.Forms.Button();
+            this.click_Borrar = new System.Windows.Forms.Button();
+            this.clic_PI = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtDisplay
             // 
-            this.txtDisplay.Location = new System.Drawing.Point(16, 18);
-            this.txtDisplay.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDisplay.Location = new System.Drawing.Point(36, 20);
+            this.txtDisplay.Margin = new System.Windows.Forms.Padding(8);
             this.txtDisplay.Name = "txtDisplay";
             this.txtDisplay.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtDisplay.Size = new System.Drawing.Size(228, 22);
+            this.txtDisplay.Size = new System.Drawing.Size(240, 22);
             this.txtDisplay.TabIndex = 0;
             this.txtDisplay.Text = "0";
             // 
@@ -76,19 +83,19 @@ namespace WinFormCalculadora
             this.panel1.Controls.Add(this.btn9);
             this.panel1.Controls.Add(this.btn8);
             this.panel1.Controls.Add(this.btn7);
-            this.panel1.Location = new System.Drawing.Point(16, 50);
+            this.panel1.Location = new System.Drawing.Point(7, 112);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(180, 132);
+            this.panel1.Size = new System.Drawing.Size(235, 132);
             this.panel1.TabIndex = 1;
             // 
             // btnSigno
             // 
-            this.btnSigno.Location = new System.Drawing.Point(123, 96);
+            this.btnSigno.Location = new System.Drawing.Point(6, 96);
             this.btnSigno.Margin = new System.Windows.Forms.Padding(4);
             this.btnSigno.Name = "btnSigno";
             this.btnSigno.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnSigno.Size = new System.Drawing.Size(53, 28);
+            this.btnSigno.Size = new System.Drawing.Size(73, 28);
             this.btnSigno.TabIndex = 13;
             this.btnSigno.Text = "+/-";
             this.btnSigno.UseVisualStyleBackColor = true;
@@ -96,10 +103,10 @@ namespace WinFormCalculadora
             // 
             // btnPunto
             // 
-            this.btnPunto.Location = new System.Drawing.Point(65, 96);
+            this.btnPunto.Location = new System.Drawing.Point(164, 96);
             this.btnPunto.Margin = new System.Windows.Forms.Padding(4);
             this.btnPunto.Name = "btnPunto";
-            this.btnPunto.Size = new System.Drawing.Size(53, 28);
+            this.btnPunto.Size = new System.Drawing.Size(67, 28);
             this.btnPunto.TabIndex = 12;
             this.btnPunto.Text = ".";
             this.btnPunto.UseVisualStyleBackColor = true;
@@ -107,10 +114,10 @@ namespace WinFormCalculadora
             // 
             // btn0
             // 
-            this.btn0.Location = new System.Drawing.Point(4, 96);
+            this.btn0.Location = new System.Drawing.Point(87, 96);
             this.btn0.Margin = new System.Windows.Forms.Padding(4);
             this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(53, 28);
+            this.btn0.Size = new System.Drawing.Size(69, 28);
             this.btn0.TabIndex = 11;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
@@ -118,10 +125,10 @@ namespace WinFormCalculadora
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(123, 65);
+            this.btn3.Location = new System.Drawing.Point(164, 65);
             this.btn3.Margin = new System.Windows.Forms.Padding(4);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(53, 28);
+            this.btn3.Size = new System.Drawing.Size(67, 28);
             this.btn3.TabIndex = 10;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
@@ -129,10 +136,10 @@ namespace WinFormCalculadora
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(65, 65);
+            this.btn2.Location = new System.Drawing.Point(87, 65);
             this.btn2.Margin = new System.Windows.Forms.Padding(4);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(53, 28);
+            this.btn2.Size = new System.Drawing.Size(69, 28);
             this.btn2.TabIndex = 9;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
@@ -140,10 +147,10 @@ namespace WinFormCalculadora
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(4, 65);
+            this.btn1.Location = new System.Drawing.Point(6, 65);
             this.btn1.Margin = new System.Windows.Forms.Padding(4);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(53, 28);
+            this.btn1.Size = new System.Drawing.Size(73, 28);
             this.btn1.TabIndex = 8;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
@@ -151,10 +158,10 @@ namespace WinFormCalculadora
             // 
             // btn6
             // 
-            this.btn6.Location = new System.Drawing.Point(123, 34);
+            this.btn6.Location = new System.Drawing.Point(164, 34);
             this.btn6.Margin = new System.Windows.Forms.Padding(4);
             this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(53, 28);
+            this.btn6.Size = new System.Drawing.Size(67, 28);
             this.btn6.TabIndex = 7;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
@@ -162,10 +169,10 @@ namespace WinFormCalculadora
             // 
             // btn5
             // 
-            this.btn5.Location = new System.Drawing.Point(65, 34);
+            this.btn5.Location = new System.Drawing.Point(87, 34);
             this.btn5.Margin = new System.Windows.Forms.Padding(4);
             this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(53, 28);
+            this.btn5.Size = new System.Drawing.Size(69, 28);
             this.btn5.TabIndex = 6;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
@@ -173,10 +180,10 @@ namespace WinFormCalculadora
             // 
             // btn4
             // 
-            this.btn4.Location = new System.Drawing.Point(4, 34);
+            this.btn4.Location = new System.Drawing.Point(6, 34);
             this.btn4.Margin = new System.Windows.Forms.Padding(4);
             this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(53, 28);
+            this.btn4.Size = new System.Drawing.Size(73, 28);
             this.btn4.TabIndex = 5;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
@@ -184,10 +191,10 @@ namespace WinFormCalculadora
             // 
             // btn9
             // 
-            this.btn9.Location = new System.Drawing.Point(123, 4);
+            this.btn9.Location = new System.Drawing.Point(164, 4);
             this.btn9.Margin = new System.Windows.Forms.Padding(4);
             this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(53, 28);
+            this.btn9.Size = new System.Drawing.Size(67, 28);
             this.btn9.TabIndex = 4;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
@@ -195,10 +202,10 @@ namespace WinFormCalculadora
             // 
             // btn8
             // 
-            this.btn8.Location = new System.Drawing.Point(65, 4);
+            this.btn8.Location = new System.Drawing.Point(87, 4);
             this.btn8.Margin = new System.Windows.Forms.Padding(4);
             this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(53, 28);
+            this.btn8.Size = new System.Drawing.Size(69, 28);
             this.btn8.TabIndex = 3;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
@@ -206,10 +213,10 @@ namespace WinFormCalculadora
             // 
             // btn7
             // 
-            this.btn7.Location = new System.Drawing.Point(4, 4);
+            this.btn7.Location = new System.Drawing.Point(6, 4);
             this.btn7.Margin = new System.Windows.Forms.Padding(4);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(53, 28);
+            this.btn7.Size = new System.Drawing.Size(73, 28);
             this.btn7.TabIndex = 2;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
@@ -217,10 +224,10 @@ namespace WinFormCalculadora
             // 
             // btnResta
             // 
-            this.btnResta.Location = new System.Drawing.Point(205, 114);
+            this.btnResta.Location = new System.Drawing.Point(250, 144);
             this.btnResta.Margin = new System.Windows.Forms.Padding(4);
             this.btnResta.Name = "btnResta";
-            this.btnResta.Size = new System.Drawing.Size(41, 28);
+            this.btnResta.Size = new System.Drawing.Size(53, 28);
             this.btnResta.TabIndex = 2;
             this.btnResta.Text = "-";
             this.btnResta.UseVisualStyleBackColor = true;
@@ -228,10 +235,10 @@ namespace WinFormCalculadora
             // 
             // btnMultiplicacion
             // 
-            this.btnMultiplicacion.Location = new System.Drawing.Point(205, 146);
+            this.btnMultiplicacion.Location = new System.Drawing.Point(250, 175);
             this.btnMultiplicacion.Margin = new System.Windows.Forms.Padding(4);
             this.btnMultiplicacion.Name = "btnMultiplicacion";
-            this.btnMultiplicacion.Size = new System.Drawing.Size(41, 28);
+            this.btnMultiplicacion.Size = new System.Drawing.Size(53, 28);
             this.btnMultiplicacion.TabIndex = 3;
             this.btnMultiplicacion.Text = "*";
             this.btnMultiplicacion.UseVisualStyleBackColor = true;
@@ -239,10 +246,10 @@ namespace WinFormCalculadora
             // 
             // btnDivision
             // 
-            this.btnDivision.Location = new System.Drawing.Point(205, 178);
+            this.btnDivision.Location = new System.Drawing.Point(250, 84);
             this.btnDivision.Margin = new System.Windows.Forms.Padding(4);
             this.btnDivision.Name = "btnDivision";
-            this.btnDivision.Size = new System.Drawing.Size(41, 28);
+            this.btnDivision.Size = new System.Drawing.Size(53, 28);
             this.btnDivision.TabIndex = 4;
             this.btnDivision.Text = "/";
             this.btnDivision.UseVisualStyleBackColor = true;
@@ -250,10 +257,10 @@ namespace WinFormCalculadora
             // 
             // btnSuma
             // 
-            this.btnSuma.Location = new System.Drawing.Point(205, 82);
+            this.btnSuma.Location = new System.Drawing.Point(250, 116);
             this.btnSuma.Margin = new System.Windows.Forms.Padding(4);
             this.btnSuma.Name = "btnSuma";
-            this.btnSuma.Size = new System.Drawing.Size(41, 28);
+            this.btnSuma.Size = new System.Drawing.Size(53, 28);
             this.btnSuma.TabIndex = 5;
             this.btnSuma.Text = "+";
             this.btnSuma.UseVisualStyleBackColor = true;
@@ -261,10 +268,10 @@ namespace WinFormCalculadora
             // 
             // btnIgual
             // 
-            this.btnIgual.Location = new System.Drawing.Point(20, 182);
+            this.btnIgual.Location = new System.Drawing.Point(250, 244);
             this.btnIgual.Margin = new System.Windows.Forms.Padding(4);
             this.btnIgual.Name = "btnIgual";
-            this.btnIgual.Size = new System.Drawing.Size(176, 28);
+            this.btnIgual.Size = new System.Drawing.Size(53, 28);
             this.btnIgual.TabIndex = 6;
             this.btnIgual.Text = "=";
             this.btnIgual.UseVisualStyleBackColor = true;
@@ -274,14 +281,94 @@ namespace WinFormCalculadora
             // 
             this.btnAC.BackColor = System.Drawing.Color.MediumBlue;
             this.btnAC.ForeColor = System.Drawing.Color.White;
-            this.btnAC.Location = new System.Drawing.Point(204, 50);
+            this.btnAC.Location = new System.Drawing.Point(12, 84);
             this.btnAC.Margin = new System.Windows.Forms.Padding(4);
             this.btnAC.Name = "btnAC";
-            this.btnAC.Size = new System.Drawing.Size(41, 28);
+            this.btnAC.Size = new System.Drawing.Size(53, 28);
             this.btnAC.TabIndex = 7;
             this.btnAC.Text = "AC";
             this.btnAC.UseVisualStyleBackColor = false;
             this.btnAC.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // clic_Tangente
+            // 
+            this.clic_Tangente.Location = new System.Drawing.Point(179, 244);
+            this.clic_Tangente.Margin = new System.Windows.Forms.Padding(4);
+            this.clic_Tangente.Name = "clic_Tangente";
+            this.clic_Tangente.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.clic_Tangente.Size = new System.Drawing.Size(53, 28);
+            this.clic_Tangente.TabIndex = 14;
+            this.clic_Tangente.Text = "TAN";
+            this.clic_Tangente.UseVisualStyleBackColor = true;
+            this.clic_Tangente.Click += new System.EventHandler(this.clic_Tangente_Click);
+            // 
+            // clic_Seno
+            // 
+            this.clic_Seno.Location = new System.Drawing.Point(104, 244);
+            this.clic_Seno.Margin = new System.Windows.Forms.Padding(4);
+            this.clic_Seno.Name = "clic_Seno";
+            this.clic_Seno.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.clic_Seno.Size = new System.Drawing.Size(53, 28);
+            this.clic_Seno.TabIndex = 15;
+            this.clic_Seno.Text = "SEN";
+            this.clic_Seno.UseVisualStyleBackColor = true;
+            this.clic_Seno.Click += new System.EventHandler(this.clic_Seno_Click);
+            // 
+            // click_Coseno
+            // 
+            this.click_Coseno.Location = new System.Drawing.Point(27, 244);
+            this.click_Coseno.Margin = new System.Windows.Forms.Padding(4);
+            this.click_Coseno.Name = "click_Coseno";
+            this.click_Coseno.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.click_Coseno.Size = new System.Drawing.Size(53, 28);
+            this.click_Coseno.TabIndex = 16;
+            this.click_Coseno.Text = "COS";
+            this.click_Coseno.UseVisualStyleBackColor = true;
+            this.click_Coseno.Click += new System.EventHandler(this.click_Coseno_Click);
+            // 
+            // click_elevarCuadrado
+            // 
+            this.click_elevarCuadrado.Location = new System.Drawing.Point(250, 208);
+            this.click_elevarCuadrado.Margin = new System.Windows.Forms.Padding(4);
+            this.click_elevarCuadrado.Name = "click_elevarCuadrado";
+            this.click_elevarCuadrado.Size = new System.Drawing.Size(53, 28);
+            this.click_elevarCuadrado.TabIndex = 17;
+            this.click_elevarCuadrado.Text = "^2";
+            this.click_elevarCuadrado.UseVisualStyleBackColor = true;
+            this.click_elevarCuadrado.Click += new System.EventHandler(this.click_elevarCuadrado_Click);
+            // 
+            // click_Raiz
+            // 
+            this.click_Raiz.Location = new System.Drawing.Point(131, 84);
+            this.click_Raiz.Margin = new System.Windows.Forms.Padding(4);
+            this.click_Raiz.Name = "click_Raiz";
+            this.click_Raiz.Size = new System.Drawing.Size(53, 28);
+            this.click_Raiz.TabIndex = 18;
+            this.click_Raiz.Text = "√x";
+            this.click_Raiz.UseVisualStyleBackColor = true;
+            this.click_Raiz.Click += new System.EventHandler(this.click_Raiz_Click);
+            // 
+            // click_Borrar
+            // 
+            this.click_Borrar.Location = new System.Drawing.Point(71, 84);
+            this.click_Borrar.Margin = new System.Windows.Forms.Padding(4);
+            this.click_Borrar.Name = "click_Borrar";
+            this.click_Borrar.Size = new System.Drawing.Size(53, 28);
+            this.click_Borrar.TabIndex = 19;
+            this.click_Borrar.Text = "<--";
+            this.click_Borrar.UseVisualStyleBackColor = true;
+            this.click_Borrar.Click += new System.EventHandler(this.click_Borrar_Click);
+            // 
+            // clic_PI
+            // 
+            this.clic_PI.Location = new System.Drawing.Point(191, 84);
+            this.clic_PI.Margin = new System.Windows.Forms.Padding(4);
+            this.clic_PI.Name = "clic_PI";
+            this.clic_PI.Size = new System.Drawing.Size(53, 28);
+            this.clic_PI.TabIndex = 20;
+            this.clic_PI.Text = "PI";
+            this.clic_PI.UseVisualStyleBackColor = true;
+            this.clic_PI.Click += new System.EventHandler(this.clic_PI_Click);
             // 
             // FrmCalculadora
             // 
@@ -289,7 +376,14 @@ namespace WinFormCalculadora
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(89)))), ((int)(((byte)(250)))));
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(263, 229);
+            this.ClientSize = new System.Drawing.Size(315, 291);
+            this.Controls.Add(this.clic_PI);
+            this.Controls.Add(this.click_Borrar);
+            this.Controls.Add(this.click_Raiz);
+            this.Controls.Add(this.click_elevarCuadrado);
+            this.Controls.Add(this.click_Coseno);
+            this.Controls.Add(this.clic_Seno);
+            this.Controls.Add(this.clic_Tangente);
             this.Controls.Add(this.btnAC);
             this.Controls.Add(this.btnIgual);
             this.Controls.Add(this.btnSuma);
@@ -335,6 +429,13 @@ namespace WinFormCalculadora
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnAC;
         private System.Windows.Forms.Button btnSigno;
+        private System.Windows.Forms.Button clic_Tangente;
+        private System.Windows.Forms.Button clic_Seno;
+        private System.Windows.Forms.Button click_Coseno;
+        private System.Windows.Forms.Button click_elevarCuadrado;
+        private System.Windows.Forms.Button click_Raiz;
+        private System.Windows.Forms.Button click_Borrar;
+        private System.Windows.Forms.Button clic_PI;
     }
 }
 

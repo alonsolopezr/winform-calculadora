@@ -15,7 +15,7 @@ namespace WinFormCalculadora
     public partial class FrmCalculadora : Form
     {
         //var de class abrstract para aceder a OTDAS las operaciones
-        Operacion oper=null;
+        Operacion oper = null;
 
         string operador = "";
         //opoerandos
@@ -38,15 +38,15 @@ namespace WinFormCalculadora
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            if(txtDisplay.Text == "0")
-                txtDisplay.Text = "1"; 
+            if (txtDisplay.Text == "0")
+                txtDisplay.Text = "1";
             else
                 txtDisplay.Text += "1";
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            if(txtDisplay.Text == "0")
+            if (txtDisplay.Text == "0")
                 txtDisplay.Text = "2";
             else
                 txtDisplay.Text += "2";
@@ -54,7 +54,7 @@ namespace WinFormCalculadora
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            if(txtDisplay.Text == "0")
+            if (txtDisplay.Text == "0")
                 txtDisplay.Text = "3";
             else
                 txtDisplay.Text += "3";
@@ -62,7 +62,7 @@ namespace WinFormCalculadora
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            if(txtDisplay.Text == "0")
+            if (txtDisplay.Text == "0")
                 txtDisplay.Text = "4";
             else
                 txtDisplay.Text += "4";
@@ -116,7 +116,7 @@ namespace WinFormCalculadora
             switch (this.operador)
             {
                 case "+":
-                    oper = new Suma(this._op1, this._op2); 
+                    oper = new Suma(this._op1, this._op2);
                     break;
                 case "-":
                     oper = new Resta(this._op1, this._op2);
@@ -131,7 +131,7 @@ namespace WinFormCalculadora
                     operador = "";
                     break;
             }
-           
+
             //ejecutamos la operacion
             txtDisplay.Text = oper.ejecutar().ToString();
 
@@ -198,6 +198,81 @@ namespace WinFormCalculadora
             this._op1 = double.Parse(txtDisplay.Text);
             //Limpiamos el boton 
             txtDisplay.Clear();//Con esto, lo que hace, es que cuando le damos al boton, se limpie para poner los siquientes operadores. 
+        }
+
+        private void clic_Tangente_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text != "")
+            {
+                //hay algo alo qu le calcularemos la tan
+                oper = new Tangente(double.Parse(txtDisplay.Text));
+                //calculmos la tngente, y ponemos el res en el display
+                double res = oper.ejecutar();
+                //res = res * -1; //Aquí cambiamos el signo de la operación, ya que nos da negativo al momento de meterle la función tangente. 
+                txtDisplay.Text = res.ToString();
+            }
+        }
+
+        private void clic_Seno_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text != "") 
+            {
+                //Instanciamos el método
+                oper = new Seno(double.Parse(txtDisplay.Text));
+                double res = oper.ejecutar();//Realizamos el método para ejecutar
+                txtDisplay.Text = res.ToString();
+            }
+        }
+
+        private void click_Coseno_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text != "") 
+            {
+                //Instanciamos el método
+                oper = new Coseno(double.Parse(txtDisplay.Text));
+                double res = oper.ejecutar();
+                txtDisplay.Text = res.ToString();
+            }
+        }
+
+        private void click_elevarCuadrado_Click(object sender, EventArgs e)
+        {
+            oper = new CuadradoDelNum(double.Parse(txtDisplay.Text));//Esto también nos ayuda a obtener si queremos usarlo en el segundo numero
+            double res = oper.ejecutar();
+            txtDisplay.Text = res.ToString();
+        }
+
+        private void click_Raiz_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text != "") 
+            {
+                oper = new Raiz(double.Parse(txtDisplay.Text));
+                double res = oper.ejecutar();
+                txtDisplay.Text = res.ToString();
+            }
+        }
+
+        private void click_Borrar_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text.Length > 1) //Aquí estamos indicando, que si el texto es mayor que uno (tiene un numero), eliminé ese numero
+            {
+                txtDisplay.Text = txtDisplay.Text.Substring(0, txtDisplay.Text.Length - 1);//Aquí, haremos que se mida la longitud de los numeros, y que eliminmemos de uno en uno, 
+            }
+            else
+            {
+                txtDisplay.Text = "0";//Este indica, que si tiene solo un numero, al eliminarlo, que nos de un 0
+            }
+        }
+
+        private void clic_PI_Click(object sender, EventArgs e)
+        {   //Programamos que nos de el valor de PI y que con él hagamos las operaciones si así lo deseamos. 
+            if (txtDisplay.Text != "") 
+            {
+                oper = new PI(double.Parse(txtDisplay.Text));
+                double res = oper.ejecutar();
+                txtDisplay.Text = res.ToString();
+
+            }
         }
     }
 }

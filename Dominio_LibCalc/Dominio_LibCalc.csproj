@@ -41,12 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Coseno.cs" />
+    <Compile Include="CuadradoDelNum.cs" />
     <Compile Include="Division.cs" />
     <Compile Include="Multiplicacion.cs" />
     <Compile Include="Operacion.cs" />
+    <Compile Include="PI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raiz.cs" />
     <Compile Include="Resta.cs" />
+    <Compile Include="Seno.cs" />
     <Compile Include="Suma.cs" />
+    <Compile Include="Tangente.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
