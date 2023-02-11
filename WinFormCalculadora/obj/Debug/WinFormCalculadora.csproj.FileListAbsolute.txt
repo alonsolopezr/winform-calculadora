@@ -17,4 +17,3 @@ C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\
 C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.Properties.Resources.resources
 C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.csproj.GenerateResource.cache
 C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.pdb
