@@ -17,3 +17,11 @@ C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\
 C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.Properties.Resources.resources
 C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.csproj.GenerateResource.cache
 C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\bin\Debug\WinFormCalculadora.exe.config
+C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\bin\Debug\WinFormCalculadora.exe
+C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\bin\Debug\WinFormCalculadora.pdb
+C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\bin\Debug\Dominio_LibCalc.dll
+C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\bin\Debug\Dominio_LibCalc.pdb
+C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.csproj.CopyComplete
+C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.exe
+C:\Users\Usuario\source\repos\calculator\winform-calculadora\WinFormCalculadora\obj\Debug\WinFormCalculadora.pdb
