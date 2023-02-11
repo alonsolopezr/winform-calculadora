@@ -143,5 +143,17 @@ namespace WinFormCalculadora
             //limpiamos
             txtDisplay.Text = "0";
         }
+
+        private void btnTangente_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text != "")
+            {
+                //hay algo alo qu le calcularemos la tan
+                oper = new Tangente(double.Parse(txtDisplay.Text));
+                //calculmos la tngente, y ponemos el res en el display
+                double res = oper.ejecutar();
+                txtDisplay.Text = res.ToString();
+            }
+        }
     }
 }
