@@ -45,6 +45,7 @@
     <Compile Include="Multiplicacion.cs" />
     <Compile Include="Operacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raiz_Sqrt.cs" />
     <Compile Include="Resta.cs" />
     <Compile Include="Suma.cs" />
     <Compile Include="Tangente.cs" />
