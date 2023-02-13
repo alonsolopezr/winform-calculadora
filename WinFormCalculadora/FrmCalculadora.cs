@@ -14,7 +14,7 @@ namespace WinFormCalculadora
     public partial class FrmCalculadora : Form
     {
         //var de class abrstract para aceder a OTDAS las operaciones
-        Operacion oper=null;
+        Operacion oper = null;
 
         string operador = "";
         //opoerandos
@@ -131,27 +131,33 @@ namespace WinFormCalculadora
                     operador = "";
                     break;
             }
-           
             //ejecutamos la operacion
             txtDisplay.Text = oper.ejecutar().ToString();
-
-            //limpiar la operador =
-            this.operador = "";
+            
+                
+                //limpiar la operador =
+                this.operador = "";
         }
 
         private void btnResta_Click(object sender, EventArgs e)
         {
             //activar una bandera
-            this.operador = "-";
+            this.operador = "-" + this._op1;
             //tomamos ope1
             this._op1 = double.Parse(txtDisplay.Text);
             //limpiar el display
             txtDisplay.Clear();
+            
         }
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "0";
+
+            if (txtDisplay.Text == "0")
+                txtDisplay.Text = "0";
+            else
+                txtDisplay.Text += "0";
+        
         }
 
         private void btnPunto_Click(object sender, EventArgs e)
@@ -182,6 +188,21 @@ namespace WinFormCalculadora
                 double res = oper.ejecutar();
                 txtDisplay.Text = res.ToString();
             }
+        }
+
+        private void btnSqrt_Click(object sender, EventArgs e)
+        {
+                if (txtDisplay.Text != "")
+                {
+                    oper = new Raiz_Sqrt(double.Parse(txtDisplay.Text));
+                    double res = oper.ejecutar();
+                    txtDisplay.Text = res.ToString();
+                }
+        }
+
+        private void txtDisplay_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void button1_Click_1(object sender, EventArgs e)

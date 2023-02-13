@@ -10,6 +10,8 @@ namespace Dominio_LibCalc
     {
         public Multiplicacion(double op1, double op2) : base(op1, op2)
         {
+            this.Ope1 = op1;
+            this.Ope2 = op2;
         }
         public override double ejecutar()
         {
