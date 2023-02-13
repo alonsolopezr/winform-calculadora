@@ -34,6 +34,8 @@ namespace WinFormCalculadora
             this._op1 = double.Parse(txtDisplay.Text);
             //limpiar el display
             txtDisplay.Clear();
+            //Habilitamos el boton igual. 
+            btnIgual.Enabled = true;
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -134,7 +136,8 @@ namespace WinFormCalculadora
 
             //ejecutamos la operacion
             txtDisplay.Text = oper.ejecutar().ToString();
-
+            //Se desabilitará de nuevo el boton igual, esto ocurre en los casos de operaciones binarias (que necesiten dos operando)
+            btnIgual.Enabled = false;
             //limpiar la operador =
             this.operador = "";
         }
@@ -147,6 +150,8 @@ namespace WinFormCalculadora
             this._op1 = double.Parse(txtDisplay.Text);
             //limpiar el display
             txtDisplay.Clear();
+            //Habilitamos el boton igual. 
+            btnIgual.Enabled = true;
         }
 
         private void btn0_Click(object sender, EventArgs e)
@@ -188,6 +193,8 @@ namespace WinFormCalculadora
             this._op1 = double.Parse(txtDisplay.Text);
             //Limpiamos el boton
             txtDisplay.Clear();
+            //Habilitamos el boton igual. 
+            btnIgual.Enabled = true;
         }
 
         private void btnDivision_Click(object sender, EventArgs e)
@@ -198,6 +205,8 @@ namespace WinFormCalculadora
             this._op1 = double.Parse(txtDisplay.Text);
             //Limpiamos el boton 
             txtDisplay.Clear();//Con esto, lo que hace, es que cuando le damos al boton, se limpie para poner los siquientes operadores. 
+            //Habilitamos el boton igual. 
+            btnIgual.Enabled = true;
         }
 
         private void clic_Tangente_Click(object sender, EventArgs e)

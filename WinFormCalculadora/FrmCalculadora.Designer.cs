@@ -268,6 +268,7 @@ namespace WinFormCalculadora
             // 
             // btnIgual
             // 
+            this.btnIgual.Enabled = false;
             this.btnIgual.Location = new System.Drawing.Point(250, 244);
             this.btnIgual.Margin = new System.Windows.Forms.Padding(4);
             this.btnIgual.Name = "btnIgual";
