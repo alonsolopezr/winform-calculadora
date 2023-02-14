@@ -21,6 +21,7 @@ namespace WinFormCalculadora
         //opoerandos
         private double _op1 = 0;
         private double _op2 = 0;
+        private bool clickIgual = false;
         public FrmCalculadora()
         {
             InitializeComponent();
@@ -40,6 +41,11 @@ namespace WinFormCalculadora
 
         private void btn1_Click(object sender, EventArgs e)
         {
+            if (this.clickIgual == true)
+            {
+                txtDisplay.Clear();//Aquí estaría reseteando para no poder escribir un numero. 
+                this.clickIgual= false;
+            }
             if (txtDisplay.Text == "0")
                 txtDisplay.Text = "1";
             else
@@ -48,6 +54,11 @@ namespace WinFormCalculadora
 
         private void btn2_Click(object sender, EventArgs e)
         {
+            if (this.clickIgual == true)
+            {
+                txtDisplay.Clear();//Aquí estaría reseteando para no poder escribir un numero. 
+                this.clickIgual = false;
+            }
             if (txtDisplay.Text == "0")
                 txtDisplay.Text = "2";
             else
@@ -56,6 +67,11 @@ namespace WinFormCalculadora
 
         private void btn3_Click(object sender, EventArgs e)
         {
+            if (this.clickIgual == true)
+            {
+                txtDisplay.Clear();//Aquí estaría reseteando para no poder escribir un numero. 
+                this.clickIgual = false;
+            }
             if (txtDisplay.Text == "0")
                 txtDisplay.Text = "3";
             else
@@ -64,6 +80,11 @@ namespace WinFormCalculadora
 
         private void btn4_Click(object sender, EventArgs e)
         {
+            if (this.clickIgual == true)
+            {
+                txtDisplay.Clear();//Aquí estaría reseteando para no poder escribir un numero. 
+                this.clickIgual = false;
+            }
             if (txtDisplay.Text == "0")
                 txtDisplay.Text = "4";
             else
@@ -72,6 +93,11 @@ namespace WinFormCalculadora
 
         private void btn5_Click(object sender, EventArgs e)
         {
+            if (this.clickIgual == true)
+            {
+                txtDisplay.Clear();//Aquí estaría reseteando para no poder escribir un numero. 
+                this.clickIgual = false;
+            }
             if (txtDisplay.Text == "0")
                 txtDisplay.Text = "5";
             else
@@ -80,6 +106,11 @@ namespace WinFormCalculadora
 
         private void btn6_Click(object sender, EventArgs e)
         {
+            if (this.clickIgual == true)
+            {
+                txtDisplay.Clear();//Aquí estaría reseteando para no poder escribir un numero. 
+                this.clickIgual = false;
+            }
             if (txtDisplay.Text == "0")
                 txtDisplay.Text = "6";
             else
@@ -88,6 +119,11 @@ namespace WinFormCalculadora
 
         private void btn7_Click(object sender, EventArgs e)
         {
+            if (this.clickIgual == true)
+            {
+                txtDisplay.Clear();//Aquí estaría reseteando para no poder escribir un numero. 
+                this.clickIgual = false;
+            }
             if (txtDisplay.Text == "0")
                 txtDisplay.Text = "7";
             else
@@ -96,6 +132,11 @@ namespace WinFormCalculadora
 
         private void btn8_Click(object sender, EventArgs e)
         {
+            if (this.clickIgual == true)
+            {
+                txtDisplay.Clear();//Aquí estaría reseteando para no poder escribir un numero. 
+                this.clickIgual = false;
+            }
             if (txtDisplay.Text == "0")
                 txtDisplay.Text = "8";
             else
@@ -104,6 +145,11 @@ namespace WinFormCalculadora
 
         private void btn9_Click(object sender, EventArgs e)
         {
+            if (this.clickIgual == true)
+            {
+                txtDisplay.Clear();//Aquí estaría reseteando para no poder escribir un numero. 
+                this.clickIgual = false;
+            }
             if (txtDisplay.Text == "0")
                 txtDisplay.Text = "9";
             else
@@ -140,6 +186,8 @@ namespace WinFormCalculadora
             btnIgual.Enabled = false;
             //limpiar la operador =
             this.operador = "";
+            //Guardamos el estado verdadero del igual. 
+            this.clickIgual = true; 
         }
 
         private void btnResta_Click(object sender, EventArgs e)
@@ -156,6 +204,11 @@ namespace WinFormCalculadora
 
         private void btn0_Click(object sender, EventArgs e)
         {
+            if (this.clickIgual == true)
+            {
+                txtDisplay.Clear();//Aquí estaría reseteando para no poder escribir un numero. 
+                this.clickIgual = false;
+            }
             txtDisplay.Text += "0";
         }
 
