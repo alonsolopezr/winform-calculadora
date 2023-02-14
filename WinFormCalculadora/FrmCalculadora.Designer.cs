@@ -31,14 +31,14 @@ namespace WinFormCalculadora
         {
             this.txtDisplay = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSqrt = new System.Windows.Forms.Button();
-            this.btnSigno = new System.Windows.Forms.Button();
+            this.btnSen = new System.Windows.Forms.Button();
+            this.btnCos = new System.Windows.Forms.Button();
             this.btnTangente = new System.Windows.Forms.Button();
             this.btnPunto = new System.Windows.Forms.Button();
+            this.btnSigno = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
-            this.btnIgual = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
@@ -46,14 +46,14 @@ namespace WinFormCalculadora
             this.btn9 = new System.Windows.Forms.Button();
             this.btn8 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
+            this.btnSqrt = new System.Windows.Forms.Button();
+            this.btnIgual = new System.Windows.Forms.Button();
             this.btnResta = new System.Windows.Forms.Button();
             this.btnMultiplicacion = new System.Windows.Forms.Button();
             this.btnDivision = new System.Windows.Forms.Button();
             this.btnSuma = new System.Windows.Forms.Button();
             this.btnAC = new System.Windows.Forms.Button();
             this.btnOn = new System.Windows.Forms.Button();
-            this.btnCos = new System.Windows.Forms.Button();
-            this.btnSen = new System.Windows.Forms.Button();
             this.btnPow = new System.Windows.Forms.Button();
             this.btnPorcentaje = new System.Windows.Forms.Button();
             this.btnOff = new System.Windows.Forms.Button();
@@ -96,26 +96,25 @@ namespace WinFormCalculadora
             this.panel1.Size = new System.Drawing.Size(158, 187);
             this.panel1.TabIndex = 1;
             // 
-            // btnSqrt
+            // btnSen
             // 
-            this.btnSqrt.Location = new System.Drawing.Point(235, 79);
-            this.btnSqrt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSqrt.Name = "btnSqrt";
-            this.btnSqrt.Size = new System.Drawing.Size(41, 28);
-            this.btnSqrt.TabIndex = 9;
-            this.btnSqrt.Text = "Sqrt";
-            this.btnSqrt.UseVisualStyleBackColor = true;
+            this.btnSen.Location = new System.Drawing.Point(112, 12);
+            this.btnSen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSen.Name = "btnSen";
+            this.btnSen.Size = new System.Drawing.Size(46, 28);
+            this.btnSen.TabIndex = 14;
+            this.btnSen.Text = "Sen";
+            this.btnSen.UseVisualStyleBackColor = true;
             // 
-            // btnSigno
+            // btnCos
             // 
-            this.btnSigno.Location = new System.Drawing.Point(112, 155);
-            this.btnSigno.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSigno.Name = "btnSigno";
-            this.btnSigno.Size = new System.Drawing.Size(45, 28);
-            this.btnSigno.TabIndex = 13;
-            this.btnSigno.Text = "+/-";
-            this.btnSigno.UseVisualStyleBackColor = true;
-            this.btnSigno.Click += new System.EventHandler(this.btnSigno_Click);
+            this.btnCos.Location = new System.Drawing.Point(57, 12);
+            this.btnCos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCos.Name = "btnCos";
+            this.btnCos.Size = new System.Drawing.Size(46, 28);
+            this.btnCos.TabIndex = 13;
+            this.btnCos.Text = "Cos";
+            this.btnCos.UseVisualStyleBackColor = true;
             // 
             // btnTangente
             // 
@@ -138,6 +137,17 @@ namespace WinFormCalculadora
             this.btnPunto.Text = ".";
             this.btnPunto.UseVisualStyleBackColor = true;
             this.btnPunto.Click += new System.EventHandler(this.btnPunto_Click);
+            // 
+            // btnSigno
+            // 
+            this.btnSigno.Location = new System.Drawing.Point(112, 155);
+            this.btnSigno.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSigno.Name = "btnSigno";
+            this.btnSigno.Size = new System.Drawing.Size(45, 28);
+            this.btnSigno.TabIndex = 13;
+            this.btnSigno.Text = "+/-";
+            this.btnSigno.UseVisualStyleBackColor = true;
+            this.btnSigno.Click += new System.EventHandler(this.btnSigno_Click);
             // 
             // btn0
             // 
@@ -171,17 +181,6 @@ namespace WinFormCalculadora
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
-            // 
-            // btnIgual
-            // 
-            this.btnIgual.Location = new System.Drawing.Point(282, 151);
-            this.btnIgual.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnIgual.Name = "btnIgual";
-            this.btnIgual.Size = new System.Drawing.Size(41, 64);
-            this.btnIgual.TabIndex = 6;
-            this.btnIgual.Text = "=";
-            this.btnIgual.UseVisualStyleBackColor = true;
-            this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
             // 
             // btn1
             // 
@@ -260,6 +259,29 @@ namespace WinFormCalculadora
             this.btn7.UseVisualStyleBackColor = true;
             this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
+            // btnSqrt
+            // 
+            this.btnSqrt.Location = new System.Drawing.Point(235, 79);
+            this.btnSqrt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSqrt.Name = "btnSqrt";
+            this.btnSqrt.Size = new System.Drawing.Size(41, 28);
+            this.btnSqrt.TabIndex = 9;
+            this.btnSqrt.Text = "Sqrt";
+            this.btnSqrt.UseVisualStyleBackColor = true;
+            this.btnSqrt.Click += new System.EventHandler(this.btnSqrt_Click);
+            // 
+            // btnIgual
+            // 
+            this.btnIgual.Enabled = false;
+            this.btnIgual.Location = new System.Drawing.Point(282, 151);
+            this.btnIgual.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnIgual.Name = "btnIgual";
+            this.btnIgual.Size = new System.Drawing.Size(41, 64);
+            this.btnIgual.TabIndex = 6;
+            this.btnIgual.Text = "=";
+            this.btnIgual.UseVisualStyleBackColor = true;
+            this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
+            // 
             // btnResta
             // 
             this.btnResta.Location = new System.Drawing.Point(183, 151);
@@ -280,6 +302,7 @@ namespace WinFormCalculadora
             this.btnMultiplicacion.TabIndex = 3;
             this.btnMultiplicacion.Text = "*";
             this.btnMultiplicacion.UseVisualStyleBackColor = true;
+            this.btnMultiplicacion.Click += new System.EventHandler(this.btnMultiplicacion_Click);
             // 
             // btnDivision
             // 
@@ -290,6 +313,7 @@ namespace WinFormCalculadora
             this.btnDivision.TabIndex = 4;
             this.btnDivision.Text = "/";
             this.btnDivision.UseVisualStyleBackColor = true;
+            this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
             // 
             // btnSuma
             // 
@@ -327,27 +351,6 @@ namespace WinFormCalculadora
             this.btnOn.TabIndex = 14;
             this.btnOn.Text = "ON";
             this.btnOn.UseVisualStyleBackColor = false;
-            this.btnOn.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // btnCos
-            // 
-            this.btnCos.Location = new System.Drawing.Point(57, 12);
-            this.btnCos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCos.Name = "btnCos";
-            this.btnCos.Size = new System.Drawing.Size(46, 28);
-            this.btnCos.TabIndex = 13;
-            this.btnCos.Text = "Cos";
-            this.btnCos.UseVisualStyleBackColor = true;
-            // 
-            // btnSen
-            // 
-            this.btnSen.Location = new System.Drawing.Point(112, 12);
-            this.btnSen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSen.Name = "btnSen";
-            this.btnSen.Size = new System.Drawing.Size(46, 28);
-            this.btnSen.TabIndex = 14;
-            this.btnSen.Text = "Sen";
-            this.btnSen.UseVisualStyleBackColor = true;
             // 
             // btnPow
             // 
