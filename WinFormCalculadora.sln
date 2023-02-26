@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30907.101
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormCalculadora", "WinFormCalculadora\WinFormCalculadora.csproj", "{1B148BAC-681D-447B-8D4D-125F5B35BAF6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio_LibCalc", "Dominio_LibCalc\Dominio_LibCalc.csproj", "{068A784E-B77A-474E-AA53-4A1B1D0FBC84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{7F2B90B5-7CC3-4E49-A461-0099A8544320}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
