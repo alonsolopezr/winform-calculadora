@@ -4,3 +4,15 @@ C:\Users\irism_000\source\repos\DesktopApps\WinFormCalculadora\Dominio_LibCalc\o
 C:\Users\irism_000\source\repos\DesktopApps\WinFormCalculadora\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.csproj.CoreCompileInputs.cache
 C:\Users\irism_000\source\repos\DesktopApps\WinFormCalculadora\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.dll
 C:\Users\irism_000\source\repos\DesktopApps\WinFormCalculadora\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.pdb
+C:\Users\JehuT\source\repos\winform-calculadora-master\winform-calculadora-master\Dominio_LibCalc\bin\Debug\Dominio_LibCalc.dll
+C:\Users\JehuT\source\repos\winform-calculadora-master\winform-calculadora-master\Dominio_LibCalc\bin\Debug\Dominio_LibCalc.pdb
+C:\Users\JehuT\source\repos\winform-calculadora-master\winform-calculadora-master\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.csproj.AssemblyReference.cache
+C:\Users\JehuT\source\repos\winform-calculadora-master\winform-calculadora-master\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.csproj.CoreCompileInputs.cache
+C:\Users\JehuT\source\repos\winform-calculadora-master\winform-calculadora-master\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.dll
+C:\Users\JehuT\source\repos\winform-calculadora-master\winform-calculadora-master\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.pdb
+C:\Users\JesusTD\Desktop\winform-calculadora-master\winform-calculadora-master\Dominio_LibCalc\bin\Debug\Dominio_LibCalc.dll
+C:\Users\JesusTD\Desktop\winform-calculadora-master\winform-calculadora-master\Dominio_LibCalc\bin\Debug\Dominio_LibCalc.pdb
+C:\Users\JesusTD\Desktop\winform-calculadora-master\winform-calculadora-master\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.csproj.AssemblyReference.cache
+C:\Users\JesusTD\Desktop\winform-calculadora-master\winform-calculadora-master\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.csproj.CoreCompileInputs.cache
+C:\Users\JesusTD\Desktop\winform-calculadora-master\winform-calculadora-master\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.dll
+C:\Users\JesusTD\Desktop\winform-calculadora-master\winform-calculadora-master\Dominio_LibCalc\obj\Debug\Dominio_LibCalc.pdb
